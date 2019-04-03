@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type: 
+  bluetooth_weighting: 1
+  battery_weighting: 1
+  noise_cancelling_weighting: 1
+  base_weighting: 1
+  max_price: 1
+
+two:
+  type: 
+  bluetooth_weighting: 1
+  battery_weighting: 1
+  noise_cancelling_weighting: 1
+  base_weighting: 1
+  max_price: 1

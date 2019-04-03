@@ -1,0 +1,9 @@
+<%= form_for @query, url: query_path do |form| %>
+  <%= label_tag :type %>
+  <%= form.text_field :headphone_type, :placeholder => "Please Select teh Type of Headphones", id: 'query_type'%>
+  
+  <%= label_tag :bluetooth_weighting%>
+  <%= form.text_field :bluetooth_weighting, placeholder: "How important is bluetooth to you", id: 'query_bluetooth_weighting'%>
+  
+  <%= form.submit id: 'submit_query' %>
+<% end %>
