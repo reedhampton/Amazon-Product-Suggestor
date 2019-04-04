@@ -1,9 +1,40 @@
 <%= form_for @query, url: query_path do |form| %>
-  <%= label_tag :type %>
-  <%= form.text_field :headphone_type, :placeholder => "Please Select teh Type of Headphones", id: 'query_type'%>
+
+  <%= label_tag(:headphone_type, "In-Ear Headphone") %>
+  <%= form.radio_button(:headphone_type, "In-Ear") %>
+
+  <%= label_tag(:headphone_type, "On-Ear Headphone") %>
+  <%= form.radio_button(:headphone_type, "On-Ear") %>
   
-  <%= label_tag :bluetooth_weighting%>
-  <%= form.text_field :bluetooth_weighting, placeholder: "How important is bluetooth to you", id: 'query_bluetooth_weighting'%>
+  <%= label_tag(:headphone_type, "Over-Ear Headphone") %>
+  <%= form.radio_button(:headphone_type, "Over-Ear") %>
+  
+  <br><br>
+  
+  <%= label_tag :bluetooth_weighting, "How important is Bluetooth to you?"%>
+  <%= form.text_field :bluetooth_weighting, id: 'query_bluetooth_weighting'%>
+  
+   <br><br>
+  
+  <%= label_tag :battery_weighting, "How important is Battery Life to you?"%>
+  <%= form.text_field :battery_weighting, id: 'query_bluetooth_weighting'%>
+  
+   <br><br>
+  
+  <%= label_tag :noise_cancelling_weighting, "How important is Noise Cancelling to you?"%>
+  <%= form.text_field :noise_cancelling_weighting, id: 'query_bluetooth_weighting'%>
+  
+   <br><br>
+  
+  <%= label_tag :base_weighting, "How important is good Base to you?"%>
+  <%= form.text_field :base_weighting, id: 'query_bluetooth_weighting'%>
+  
+   <br><br>
+  
+  <%= label_tag :max_price, "What is your max price?"%>
+  <%= form.text_field :max_price, id: 'query_bluetooth_weighting'%>
+  
+   <br><br>
   
   <%= form.submit id: 'submit_query' %>
 <% end %>

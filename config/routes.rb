@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root 'home#index'
   
-  get 'home/index'
+  get 'home/index' , :as => :home
   
   #Routes for Queries
     #index
@@ -10,5 +10,7 @@ Rails.application.routes.draw do
     #new
       get 'query/new', to: 'query#new'
       post '/query', to: 'query#create'
+    #Show
+      get 'query/:id', to: 'query#show', :as => :query_show
 
 end

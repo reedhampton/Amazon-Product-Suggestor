@@ -1,11 +1,23 @@
 <h1>All Queries</h1>
 
-<div>
+<table>
+    <tr>
+      <th>headphone_type</th>
+      <th>bluetooth_weighting</th>
+      <th>battery_weighting</th>
+      <th>noise_cancelling_weighting</th>
+      <th>base_weighting</th>
+      <th>max_price</th>
+    </tr>
     <% @queries.each do |q| %>
-        <%= q.headphone_type %>
-        <br>
-        <%= q.bluetooth_weighting %>
-        <br>
-        <hr>
+      <tr>
+        <td><%= q.headphone_type %></td>
+        <td><%= q.bluetooth_weighting %></td>
+        <td><%= q.battery_weighting %></td>
+        <td><%= q.noise_cancelling_weighting %></td>
+        <td><%= q.base_weighting %></td>
+        <td><%= q.max_price %></td>
+        <td><%= link_to "Query", query_show_path(q.id) %></td>
+      </tr>
     <% end %>
-</div>
+</table>
