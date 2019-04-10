@@ -38,7 +38,7 @@ class QueryController < ApplicationController
 
     
     #Insert dummy values until the middle portion of this controller operates
-    #session[:product_price] = @function_name
+    #session[:product_price] =
     #session[:product_url] = "https://www.amazon.com/";
     #session[:bluetooth_score] = 5;
     #session[:battery_score] = 5;
