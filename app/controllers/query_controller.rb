@@ -25,15 +25,15 @@ class QueryController < ApplicationController
     #WE NEED TO DO QUERY PROCESSING
     @python_return = `#{@python_call}`.split(/\s*,\s*/);
     
-    #Assign the returned string into the appropriate variables
-    session[:bluetooth_score] = @python_return[0].delete! '"'
-    session[:noise_cancelling_score] = @python_return[1].delete! '"';
-    session[:base_score] = @python_return[2].delete! '"';
-    session[:overall_score] = @python_return[3].delete! '"';
-    session[:product_price] = @python_return[4].delete! '"';
-    session[:product_url] = @python_return[5].delete! '"';
-    session[:top_bt_url] = @python_return[6].delete! '"';
-    session[:top_nc_url] = @python_return[7].delete! '"';
+    #Assign the returned string into the appropriate variables str.gsub("\n", "")              # Remove all \n 
+    session[:bluetooth_score] = @python_return[0].gsub('"', '');
+    session[:noise_cancelling_score] = @python_return[1].gsub('"', '');
+    session[:base_score] = @python_return[2].gsub('"', '');
+    session[:overall_score] = @python_return[3].gsub('"', '');
+    session[:product_price] = @python_return[4].gsub('"', '');
+    session[:product_url] = @python_return[5].gsub('"', '');
+    session[:top_bt_url] = @python_return[6].gsub('"', '');
+    session[:top_nc_url] = @python_return[7].gsub('"', '');
     session[:top_b_url] = @python_return[8].chomp('\n"]');
 
     
