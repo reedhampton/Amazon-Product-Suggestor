@@ -55,6 +55,6 @@ class QueryController < ApplicationController
   
   private
   def input_params
-    params.require(:query).permit(:headphone_type, :bluetooth_weighting, :battery_weighting, :noise_cancelling_weighting, :base_weighting , :max_price)
+    params.require(:query).permit(:headphone_type, :bluetooth_weighting, :noise_cancelling_weighting, :base_weighting , :max_price)
   end
 end
