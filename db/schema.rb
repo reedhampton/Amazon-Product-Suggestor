@@ -10,12 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190403155741) do
+ActiveRecord::Schema.define(version: 20190410153448) do
 
   create_table "queries", force: :cascade do |t|
     t.string "headphone_type"
     t.integer "bluetooth_weighting"
-    t.integer "battery_weighting"
     t.integer "noise_cancelling_weighting"
     t.integer "base_weighting"
     t.integer "max_price"

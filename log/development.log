@@ -2518,3 +2518,21 @@ Processing by QueryController#show as HTML
 Completed 200 OK in 24ms (Views: 18.1ms | ActiveRecord: 0.2ms)
 
 
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to RemoveBatteryWeighting (20190410153448)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aqueries" ("id" integer NOT NULL PRIMARY KEY, "headphone_type" varchar DEFAULT NULL, "bluetooth_weighting" integer DEFAULT NULL, "battery_weighting" integer DEFAULT NULL, "noise_cancelling_weighting" integer DEFAULT NULL, "base_weighting" integer DEFAULT NULL, "max_price" integer DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "aqueries" ("id","headphone_type","bluetooth_weighting","battery_weighting","noise_cancelling_weighting","base_weighting","max_price","created_at","updated_at")
+                     SELECT "id","headphone_type","bluetooth_weighting","battery_weighting","noise_cancelling_weighting","base_weighting","max_price","created_at","updated_at" FROM "queries"[0m
+  [1m[35m (1.3ms)[0m  [1m[35mDROP TABLE "queries"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "queries" ("id" integer NOT NULL PRIMARY KEY, "headphone_type" varchar DEFAULT NULL, "bluetooth_weighting" integer DEFAULT NULL, "noise_cancelling_weighting" integer DEFAULT NULL, "base_weighting" integer DEFAULT NULL, "max_price" integer DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "queries" ("id","headphone_type","bluetooth_weighting","noise_cancelling_weighting","base_weighting","max_price","created_at","updated_at")
+                     SELECT "id","headphone_type","bluetooth_weighting","noise_cancelling_weighting","base_weighting","max_price","created_at","updated_at" FROM "aqueries"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aqueries"[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190410153448"]]
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
