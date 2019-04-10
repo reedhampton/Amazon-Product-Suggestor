@@ -183,9 +183,11 @@ def tops(termsScoreListofList,queryTerm1Pref,queryTerm2Pref,queryTerm3Pref):
         noitem = True
 
             
-    a = 10/(bestProduct[1])
-    b = (5- (a/3))
-    toReturn.append(round(b,2))
+    # a = 10/(bestProduct[1])
+    # b = (5- (a/3))
+    # toReturn.append(round(b,2))
+    toReturn.append(round ( ( (toReturn[1]+toReturn[2]+toReturn[3])/3),2 ) )
+
 
     toReturn.append(highestScoreProdInQueryList[0])
     toReturn.append(highestScoreProdInQueryList[1])
