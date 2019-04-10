@@ -163,25 +163,14 @@ def tops(termsScoreListofList,queryTerm1Pref,queryTerm2Pref,queryTerm3Pref):
     toReturn.append(highestScoreProdInQueryList[1])
     toReturn.append(highestScoreProdInQueryList[2])
 
-    if(queryTerm1Pref!=-9 and queryTerm2Pref!=-9 and queryTerm3Pref!=-9 ):
-        toReturn[1] = round(toReturn[1] / queryTerm1Pref,2)
-        toReturn[2] = round(toReturn[2] / queryTerm2Pref,2)
-        toReturn[3] = round(toReturn[3] / queryTerm3Pref,2)
-        toReturn[5] = ( toReturn[5][0], round(toReturn[5][1] / queryTerm1Pref,2) )
-        toReturn[6] = ( toReturn[6][0], round(toReturn[6][1] / queryTerm2Pref,2) )
-        toReturn[7] = ( toReturn[7][0], round(toReturn[7][1] / queryTerm3Pref,2) )
-    else:
-        if(queryTerm1Pref==-9):
-            toReturn[1] = 0
-            toReturn[5] = ( toReturn[5][0], 0 )
-        if(queryTerm2Pref==-9):
-            toReturn[2] = 0
-            toReturn[6] = ( toReturn[6][0], 0 )
-        if(queryTerm3Pref==-9):
-            toReturn[3] = 0
-            toReturn[7] = ( toReturn[7][0], 0 )
-
+    toReturn[1] = round(toReturn[1] / queryTerm1Pref,2)
+    toReturn[2] = round(toReturn[2] / queryTerm2Pref,2)
+    toReturn[3] = round(toReturn[3] / queryTerm3Pref,2)
     toReturn[4] = round( ( (toReturn[1]+toReturn[2]+toReturn[3])/3 ), 2 )
+    toReturn[5] = ( toReturn[5][0], round(toReturn[5][1] / queryTerm1Pref,2) )
+    toReturn[6] = ( toReturn[6][0], round(toReturn[6][1] / queryTerm2Pref,2) )
+    toReturn[7] = ( toReturn[7][0], round(toReturn[7][1] / queryTerm3Pref,2) )
+
     return(toReturn)
     
 def toRubyString(champList,prodUrlPriceList):
@@ -261,14 +250,6 @@ def main():
     queryTerm3Pref = int(sys.argv[3])
     queryType = str(sys.argv[4])
     queryPrice = int(sys.argv[5])
-
-
-    if(queryTerm1Pref == 0):
-        queryTerm1Pref = -9
-    if(queryTerm2Pref == 0):
-        queryTerm2Pref = -9
-    if(queryTerm3Pref == 0):
-        queryTerm3Pref = -9
     
 
 
