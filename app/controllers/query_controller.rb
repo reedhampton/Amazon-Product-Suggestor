@@ -24,14 +24,26 @@ class QueryController < ApplicationController
 
     #WE NEED TO DO QUERY PROCESSING
     @python_return = `#{@python_call}`.split(/\s*,\s*/);
-    @function_name = @python_return;
+    
+    #Assign the returned string into the appropriate variables
+    session[:bluetooth_score] = @python_return[0].tr!('[' , '').tr!('"', '');
+    session[:noise_cancelling_score] = @python_return[1].tr!('"', '');
+    session[:base_score] = @python_return[2].tr!('"', '');
+    session[:overall_score] = @python_return[3].tr!('"', '');
+    session[:product_price] = @python_return[4].tr!('"', '');
+    session[:product_url] = @python_return[5].tr!('"', '');
+    session[:top_bt_url] = @python_return[6].tr!('"', '');
+    session[:top_nc_url] = @python_return[7].tr!('"', '');
+    session[:top_b_url] = @python_return[8].chomp('\n"]');
+
+    
     #Insert dummy values until the middle portion of this controller operates
-    session[:product_price] = @function_name
-    session[:product_url] = "https://www.amazon.com/";
-    session[:bluetooth_score] = 5;
-    session[:battery_score] = 5;
-    session[:noise_cancelling_score] = 5;
-    session[:base_score] = 5;
+    #session[:product_price] = @function_name
+    #session[:product_url] = "https://www.amazon.com/";
+    #session[:bluetooth_score] = 5;
+    #session[:battery_score] = 5;
+    #session[:noise_cancelling_score] = 5;
+    #session[:base_score] = 5;
     
     #Redirect all of the information back to the user
     redirect_to query_show_path(@query.id)

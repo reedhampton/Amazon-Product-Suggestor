@@ -21,7 +21,17 @@
 
 <hr>
 
-<h2><%= session[:product_price] %></h2>
+<h2>Bluetoothh Score: <%= session[:bluetooth_score] %></h2> <br>
+<h2>Noise Cancelling Score: <%= session[:noise_cancelling_score] %></h2> <br>
+<h2>Base Score: <%= session[:base_score] %></h2> <br>
+<h2>Overall Score: <%= session[:overall_score] %></h2> <br>
+<h2>Product Price: <%= session[:product_price] %></h2> <br>
+<h2>Product URL: <%= session[:product_url] %></h2> <br>
+<h2>Top Bluetooth Product: <%= session[:top_bt_url] %></h2> <br>
+<h2>Top Noise Cancelling Product: <%= session[:top_nc_url] %></h2> <br>
+<h2>Top Base Product: <%= session[:top_b_url] %></h2> <br>
+
+
 
 <h4>This is a temporary I-Frame, the actual Product will go in here</h4>
 <%= content_tag(:iframe, '', src: "https://www.amazon.com/", width: 560, height: 315, frameborder: 0) %>
