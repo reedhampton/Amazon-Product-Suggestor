@@ -317,3 +317,6 @@ def main():
 
 
 if __name__ == "__main__":
+    toRuby = main()
+    # This functions as a return (its returning to STDOUT)
+    print(toRuby)
