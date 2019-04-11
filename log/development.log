@@ -4451,3 +4451,1154 @@ Processing by QueryController#new as HTML
 Completed 200 OK in 71ms (Views: 60.1ms | ActiveRecord: 0.8ms)
 
 
+Started GET "/" for 165.91.12.97 at 2019-04-11 19:33:18 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 47ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 165.91.12.97 at 2019-04-11 19:33:20 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 48ms (Views: 47.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 19:33:23 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (1.9ms)
+  Rendered query/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 45ms (Views: 44.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/index" for 165.91.12.97 at 2019-04-11 19:33:25 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 46ms (Views: 45.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 19:33:27 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (1.9ms)
+  Rendered query/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 48ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 19:33:30 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (1.9ms)
+  Rendered query/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 66ms (Views: 65.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/index" for 165.91.12.97 at 2019-04-11 19:33:31 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 46ms (Views: 44.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/index" for 165.91.12.97 at 2019-04-11 19:36:00 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"new", :class=>"btn btn-primary", :controller=>"home"}):
+    29: </div>
+    30: 
+    31: <div class='text-center'>
+    32:     <%= button_to "Suggestor", action: 'new', :class => "btn btn-primary"  %>
+    33: </div>
+  
+app/views/home/index.html.erb:32:in `_app_views_home_index_html_erb___2705667682084312179_69912551821800'
+Started GET "/home/index" for 165.91.12.97 at 2019-04-11 19:36:24 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 44ms (Views: 43.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/query/new?class=btn+btn-primary" for 165.91.12.97 at 2019-04-11 19:37:02 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [POST] "/query/new"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/home/index" for 165.91.12.97 at 2019-04-11 19:37:14 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 46ms (Views: 45.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new?class=btn+btn-primary" for 165.91.12.97 at 2019-04-11 19:37:16 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Parameters: {"class"=>"btn btn-primary"}
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (1.9ms)
+  Rendered query/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 45ms (Views: 43.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/index" for 165.91.12.97 at 2019-04-11 19:37:45 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 53ms (Views: 52.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/index" for 165.91.12.97 at 2019-04-11 19:38:13 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 51ms (Views: 49.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/index" for 165.91.12.97 at 2019-04-11 19:38:13 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 46ms (Views: 44.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/index" for 165.91.12.97 at 2019-04-11 19:38:21 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 45ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/query/new?class=button+btn-primary&method=get" for 165.91.12.97 at 2019-04-11 19:38:23 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [POST] "/query/new"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 19:38:32 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.0ms)
+  Rendered query/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 47ms (Views: 45.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/index" for 165.91.12.97 at 2019-04-11 19:38:55 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 53ms (Views: 51.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/index" for 165.91.12.97 at 2019-04-11 19:38:55 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 45ms (Views: 43.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 19:38:57 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (1.9ms)
+  Rendered query/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 48ms (Views: 46.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/index" for 165.91.12.97 at 2019-04-11 19:39:04 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 52ms (Views: 51.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/index" for 165.91.12.97 at 2019-04-11 19:39:13 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 48ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 19:39:16 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (1.9ms)
+  Rendered query/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 45ms (Views: 43.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 19:41:34 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (1.8ms)
+  Rendered query/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 45ms (Views: 44.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 19:42:06 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (1.9ms)
+  Rendered query/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 46ms (Views: 45.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 19:42:08 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (1.9ms)
+  Rendered query/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 44ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 19:44:24 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.4ms)
+  Rendered query/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 45ms (Views: 44.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 19:44:43 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.1ms)
+  Rendered query/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 53ms (Views: 51.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 19:45:25 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (0.8ms)
+  Rendered query/new.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/CSCE 470/Amazon-Product-Suggestor/app/views/query/_form.html.erb:12: syntax error, unexpected ',', expecting =>
+... :headphone_type, { "Over-Ear", class: "hidden"} );@output_b...
+...                              ^
+/home/ec2-user/environment/CSCE 470/Amazon-Product-Suggestor/app/views/query/_form.html.erb:12: syntax error, unexpected '}', expecting ')'
+... { "Over-Ear", class: "hidden"} );@output_buffer.safe_append...
+...                              ^
+/home/ec2-user/environment/CSCE 470/Amazon-Product-Suggestor/app/views/query/_form.html.erb:38: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+          ^~~
+/home/ec2-user/environment/CSCE 470/Amazon-Product-Suggestor/app/views/query/_form.html.erb:40: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/ec2-user/environment/CSCE 470/Amazon-Product-Suggestor/app/views/query/_form.html.erb:42: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/query/_form.html.erb:12: syntax error, unexpected ',', expecting =>
+app/views/query/_form.html.erb:12: syntax error, unexpected '}', expecting ')'
+app/views/query/_form.html.erb:38: syntax error, unexpected keyword_end, expecting ')'
+app/views/query/_form.html.erb:40: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/query/_form.html.erb:42: syntax error, unexpected keyword_end, expecting ')'
+app/views/query/new.html.erb:5:in `_app_views_query_new_html_erb___3677357217632932570_69912553533160'
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 19:47:01 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (1.9ms)
+  Rendered query/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 45ms (Views: 44.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 19:47:40 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.0ms)
+  Rendered query/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 2151ms (Views: 2149.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 19:51:58 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (1.9ms)
+  Rendered query/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 2284ms (Views: 2283.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:01:07 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (1.0ms)
+  Rendered query/new.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.8ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/CSCE 470/Amazon-Product-Suggestor/app/views/query/_form.html.erb:17: syntax error, unexpected '=', expecting ')'
+...pend=( {class: hide_element()}= label_tag :bluetooth_weighti...
+...                              ^):
+  
+app/views/query/_form.html.erb:17: syntax error, unexpected '=', expecting ')'
+app/views/query/new.html.erb:5:in `_app_views_query_new_html_erb___3677357217632932570_69912550726400'
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:04:08 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.3ms)
+  Rendered query/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 126ms (Views: 125.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:04:17 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (1.9ms)
+  Rendered query/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 48ms (Views: 46.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:05:45 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.1ms)
+  Rendered query/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 127ms (Views: 125.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:10:38 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.2ms)
+  Rendered query/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 133ms (Views: 122.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:10:51 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.0ms)
+  Rendered query/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 45ms (Views: 43.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:12:09 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.0ms)
+  Rendered query/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 138ms (Views: 137.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:12:22 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.1ms)
+  Rendered query/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 128ms (Views: 127.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:12:55 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.8ms)
+  Rendered query/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 124ms (Views: 122.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:14:04 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.1ms)
+  Rendered query/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 47ms (Views: 45.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:14:19 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.0ms)
+  Rendered query/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 122ms (Views: 121.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:14:45 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.3ms)
+  Rendered query/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 48ms (Views: 46.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:14:56 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (1.9ms)
+  Rendered query/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 43ms (Views: 41.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:16:40 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (1.9ms)
+  Rendered query/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 122ms (Views: 120.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:16:48 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (7.9ms)
+  Rendered query/new.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 52ms (Views: 51.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:16:48 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.3ms)
+  Rendered query/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 46ms (Views: 44.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:18:01 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.1ms)
+  Rendered query/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 61ms (Views: 59.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:18:42 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.1ms)
+  Rendered query/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 45ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:19:32 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.0ms)
+  Rendered query/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 46ms (Views: 44.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:19:52 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.1ms)
+  Rendered query/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 44ms (Views: 43.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:21:24 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (1.9ms)
+  Rendered query/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 58ms (Views: 57.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:21:41 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.0ms)
+  Rendered query/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 48ms (Views: 46.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:21:51 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.0ms)
+  Rendered query/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 52ms (Views: 50.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:22:01 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (1.9ms)
+  Rendered query/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 45ms (Views: 44.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:22:15 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (1.9ms)
+  Rendered query/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 46ms (Views: 44.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:22:43 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.1ms)
+  Rendered query/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 46ms (Views: 45.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:23:07 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.1ms)
+  Rendered query/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 46ms (Views: 45.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:23:16 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.0ms)
+  Rendered query/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 48ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:23:26 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (1.9ms)
+  Rendered query/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 44ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:24:27 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.0ms)
+  Rendered query/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 46ms (Views: 45.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:24:28 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.0ms)
+  Rendered query/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 50ms (Views: 49.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:24:40 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.0ms)
+  Rendered query/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 66ms (Views: 65.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:25:06 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (1.9ms)
+  Rendered query/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 46ms (Views: 45.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:25:26 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.0ms)
+  Rendered query/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 47ms (Views: 46.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:25:28 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.1ms)
+  Rendered query/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 45ms (Views: 44.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:26:29 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.0ms)
+  Rendered query/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 44ms (Views: 42.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:26:35 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (1.9ms)
+  Rendered query/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 44ms (Views: 43.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:26:49 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.1ms)
+  Rendered query/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 47ms (Views: 45.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:27:01 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.1ms)
+  Rendered query/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 47ms (Views: 45.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:27:02 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.2ms)
+  Rendered query/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 51ms (Views: 50.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:27:14 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.0ms)
+  Rendered query/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 46ms (Views: 45.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:27:28 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.0ms)
+  Rendered query/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 45ms (Views: 43.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:27:36 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.2ms)
+  Rendered query/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 47ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:27:43 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.0ms)
+  Rendered query/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 46ms (Views: 45.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:27:53 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.0ms)
+  Rendered query/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 45ms (Views: 43.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:28:16 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (1.9ms)
+  Rendered query/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 131ms (Views: 130.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:28:41 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (5.1ms)
+  Rendered query/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 62ms (Views: 61.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:28:47 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.3ms)
+  Rendered query/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 51ms (Views: 49.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:29:38 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.1ms)
+  Rendered query/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 45ms (Views: 44.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:30:02 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.0ms)
+  Rendered query/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 46ms (Views: 44.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:30:32 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.7ms)
+  Rendered query/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 45ms (Views: 43.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:30:48 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.1ms)
+  Rendered query/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 45ms (Views: 43.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:31:16 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.1ms)
+  Rendered query/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 47ms (Views: 46.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:31:55 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.1ms)
+  Rendered query/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 127ms (Views: 125.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:33:47 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.2ms)
+  Rendered query/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 131ms (Views: 129.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:34:02 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.1ms)
+  Rendered query/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 122ms (Views: 120.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:36:32 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.0ms)
+  Rendered query/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 124ms (Views: 123.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:36:46 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.2ms)
+  Rendered query/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 46ms (Views: 44.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/index" for 165.91.12.97 at 2019-04-11 20:36:51 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 45ms (Views: 44.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:36:52 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.2ms)
+  Rendered query/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 47ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:37:22 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.1ms)
+  Rendered query/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 43ms (Views: 42.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:37:33 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.1ms)
+  Rendered query/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 46ms (Views: 45.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/index" for 165.91.12.97 at 2019-04-11 20:38:16 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 52ms (Views: 51.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:38:20 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.1ms)
+  Rendered query/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 46ms (Views: 45.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/query" for 165.91.12.97 at 2019-04-11 20:38:29 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ts/BRKJd2wl8R6aKpxKcbJvr9KWj6RykSB5/Ow/nxWXpfuCZ5qg8xtIyvS0IU5LD5GgP7YCvocksQ/lZzOWLFQ==", "query"=>{"headphone_type"=>"On-Ear", "bluetooth_weighting"=>"5", "noise_cancelling_weighting"=>"2", "base_weighting"=>"2", "max_price"=>"100"}, "commit"=>"Create Query"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.1ms)[0m  [1m[32mINSERT INTO "queries" ("headphone_type", "bluetooth_weighting", "noise_cancelling_weighting", "base_weighting", "max_price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["headphone_type", "On-Ear"], ["bluetooth_weighting", 5], ["noise_cancelling_weighting", 2], ["base_weighting", 2], ["max_price", 100], ["created_at", "2019-04-11 20:38:29.695024"], ["updated_at", "2019-04-11 20:38:29.695024"]]
+  [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://7a4614139f7d46a3980eef3f3183937e.vfs.cloud9.us-east-1.amazonaws.com/query/36
+Completed 302 Found in 38ms (ActiveRecord: 8.5ms)
+
+
+Started GET "/query/36" for 165.91.12.97 at 2019-04-11 20:38:31 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mQuery Load (0.2ms)[0m  [1m[34mSELECT  "queries".* FROM "queries" WHERE "queries"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+  Rendering query/show.html.erb within layouts/application
+  Rendered query/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 44ms (Views: 41.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:38:35 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.2ms)
+  Rendered query/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 47ms (Views: 45.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:39:05 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.3ms)
+  Rendered query/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 47ms (Views: 46.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:39:15 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.2ms)
+  Rendered query/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 43ms (Views: 42.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/index" for 165.91.12.97 at 2019-04-11 20:39:16 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 44ms (Views: 43.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:39:30 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.2ms)
+  Rendered query/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 47ms (Views: 46.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:40:27 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.3ms)
+  Rendered query/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 53ms (Views: 51.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:41:02 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.2ms)
+  Rendered query/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 45ms (Views: 43.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:41:24 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (1.1ms)
+  Rendered query/new.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/CSCE 470/Amazon-Product-Suggestor/app/views/query/_form.html.erb:8: syntax error, unexpected =>
+...ype, "On-Ear Headphone":class=> 'd-block' );@output_buffer.s...
+...                             ^~):
+  
+app/views/query/_form.html.erb:8: syntax error, unexpected =>
+app/views/query/new.html.erb:5:in `_app_views_query_new_html_erb___3677357217632932570_69912551268620'
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:41:33 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.1ms)
+  Rendered query/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 47ms (Views: 46.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:41:49 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.2ms)
+  Rendered query/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 46ms (Views: 44.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:42:08 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.1ms)
+  Rendered query/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 45ms (Views: 44.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:42:49 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.2ms)
+  Rendered query/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 51ms (Views: 50.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:43:26 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.1ms)
+  Rendered query/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 45ms (Views: 44.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:43:35 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.1ms)
+  Rendered query/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 46ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:43:45 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.1ms)
+  Rendered query/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 45ms (Views: 43.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:45:08 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.5ms)
+  Rendered query/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 48ms (Views: 46.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/query" for 165.91.12.97 at 2019-04-11 20:45:18 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CpWXoMpXj4RE09yBt+fN08nzB9NxblA+sN7F5rb6e5X0jrCMXPJwdiLzN6GkvQRel1wMKlBb9GTKDc9qQLkePg==", "query"=>{"headphone_type"=>"In-Ear", "bluetooth_weighting"=>"2", "noise_cancelling_weighting"=>"5", "base_weighting"=>"2", "max_price"=>"100"}, "commit"=>"Create Query"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "queries" ("headphone_type", "bluetooth_weighting", "noise_cancelling_weighting", "base_weighting", "max_price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["headphone_type", "In-Ear"], ["bluetooth_weighting", 2], ["noise_cancelling_weighting", 5], ["base_weighting", 2], ["max_price", 100], ["created_at", "2019-04-11 20:45:18.131203"], ["updated_at", "2019-04-11 20:45:18.131203"]]
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://7a4614139f7d46a3980eef3f3183937e.vfs.cloud9.us-east-1.amazonaws.com/query/37
+Completed 302 Found in 32ms (ActiveRecord: 6.7ms)
+
+
+Started GET "/query/37" for 165.91.12.97 at 2019-04-11 20:45:18 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"37"}
+  [1m[36mQuery Load (0.1ms)[0m  [1m[34mSELECT  "queries".* FROM "queries" WHERE "queries"."id" = ? LIMIT ?[0m  [["id", 37], ["LIMIT", 1]]
+  Rendering query/show.html.erb within layouts/application
+  Rendered query/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 43ms (Views: 41.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/query/new" for 165.91.12.97 at 2019-04-11 20:45:52 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.7ms)
+  Rendered query/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 46ms (Views: 44.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/index" for 165.91.12.97 at 2019-04-11 20:46:01 +0000
+Cannot render console from 165.91.12.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 48ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+

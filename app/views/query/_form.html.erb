@@ -1,38 +1,94 @@
 <%= form_for @query, url: query_path do |form| %>
 
-  <%= label_tag(:headphone_type, "In-Ear Headphone") %>
-  <%= form.radio_button(:headphone_type, "In-Ear") %>
-  <br>
+  <div class='card fixed-top mx-auto headphone_type' style="top:35%; width:25%;">
+    <div class="card-header">
+      <div class='d-block mb-2'>
+        <%= label_tag :headphone_type, "In-Ear Headphone" %>
+        <%= form.radio_button :headphone_type, "In-Ear"%>
+      </div>
+      
+      <div class='d-block mb-2'>
+        <%= label_tag :headphone_type, "On-Ear Headphone"%>
+        <%= form.radio_button :headphone_type, "On-Ear"%>
+      </div>
+      
+      <div class='d-block mb-2'>
+        <%= label_tag :headphone_type, "Over-Ear Headphone" %>
+        <%= form.radio_button :headphone_type, "Over-Ear" %>
+      </div>
+    </div>
+    
+    <div class='card-body'>
+      <%= link_to "Next", "#", id: "show-bt", :class=> 'btn btn-success' %>
+    </div>
+  </div>
+  
+  
+  <div class='card fixed-top mx-auto d-none bluetooth' style="top:35%; width:25%;">
+    <div class="card-header">
+      <%= label_tag :bluetooth_weighting, "How important is Bluetooth to you?"%>
 
-  <%= label_tag(:headphone_type, "On-Ear Headphone") %>
-  <%= form.radio_button(:headphone_type, "On-Ear") %>
-  <br>
+      <div class='d-block mb-2'>
+        <%= label_tag :bluetooth_weighting, "1" %>
+        <%= form.radio_button :bluetooth_weighting, "1"%>
+      </div>
+      
+      <div class='d-block mb-2'>
+        <%= label_tag :bluetooth_weighting, "2"%>
+        <%= form.radio_button :bluetooth_weighting, "2"%>
+      </div>
+      
+      <div class='d-block mb-2'>
+        <%= label_tag :bluetooth_weighting, "3" %>
+        <%= form.radio_button :bluetooth_weighting, "3" %>
+      </div>
+      
+      <div class='d-block mb-2'>
+        <%= label_tag :bluetooth_weighting, "4"%>
+        <%= form.radio_button :bluetooth_weighting, "4"%>
+      </div>
+      
+      <div class='d-block mb-2'>
+        <%= label_tag :bluetooth_weighting, "5" %>
+        <%= form.radio_button :bluetooth_weighting, "5" %>
+      </div>
+    </div>
+    
+    <div class='card-body'>
+      <%= link_to "Next", "#", id: "show-nc", :class=> 'btn btn-success' %>
+    </div>
+  </div>
+
+  <div class='card fixed-top mx-auto d-none noise_cancelling' style="top:35%; width:25%;">
+    <div class="card-header">
+      <%= label_tag :noise_cancelling_weighting, "How important is Noise Cancelling to you?"%>
+      <%= form.text_field :noise_cancelling_weighting%>
+    </div>
+    
+    <div class='card-body'>
+      <%= link_to "Next", "#", id: "show-b", :class=> 'btn btn-success' %>
+    </div>
+  </div>
+
+  <div class='card fixed-top mx-auto d-none bass' style="top:35%; width:25%;">
+    <div class="card-header">
+      <%= label_tag :base_weighting, "How important is good bass to you?"%>
+      <%= form.text_field :base_weighting%>
+    </div>
+    
+    <div class='card-body'>
+      <%= link_to "Next", "#", id: "show-mp", :class=> 'btn btn-success' %>
+    </div>
+  </div>
   
-  <%= label_tag(:headphone_type, "Over-Ear Headphone") %>
-  <%= form.radio_button(:headphone_type, "Over-Ear") %>
-  <br>
-  
-  <br><br>
-  
-  <%= label_tag :bluetooth_weighting, "How important is Bluetooth to you?"%>
-  <%= form.text_field :bluetooth_weighting, id: 'query_bluetooth_weighting'%>
-  
-   <br><br>
-  
-  <%= label_tag :noise_cancelling_weighting, "How important is Noise Cancelling to you?"%>
-  <%= form.text_field :noise_cancelling_weighting, id: 'query_bluetooth_weighting'%>
-  
-   <br><br>
-  
-  <%= label_tag :base_weighting, "How important is good Base to you?"%>
-  <%= form.text_field :base_weighting, id: 'query_bluetooth_weighting'%>
-  
-   <br><br>
-  
-  <%= label_tag :max_price, "What is your max price?"%>
-  <%= form.text_field :max_price, id: 'query_bluetooth_weighting'%>
-  
-   <br><br>
-  
-  <%= form.submit id: 'submit_query' %>
+  <div class='card fixed-top mx-auto d-none max_price' style="top:35%; width:25%;">
+    <div class="card-header">
+      <%= label_tag :max_price, "What is your max price?"%>
+      <%= form.text_field :max_price%>
+    </div>
+    
+    <div class='card-body'>
+      <%= form.submit id: 'submit_query', :class=> 'btn btn-success' %>
+    </div>
+  </div>
 <% end %>

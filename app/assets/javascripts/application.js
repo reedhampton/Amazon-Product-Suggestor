@@ -17,3 +17,27 @@
 //= require jquery3
 //= require popper
 //= require bootstrap-sprockets
+
+$(document).on("click","#show-bt", function(e){
+  $(".headphone_type").addClass('d-none');
+  $(".bluetooth").removeClass('d-none');
+  e.preventDefault();
+});
+
+$(document).on("click","#show-nc", function(e){
+  $(".bluetooth").addClass('d-none');
+  $(".noise_cancelling").removeClass('d-none');
+  e.preventDefault();
+});
+
+$(document).on("click","#show-b", function(e){
+  $(".noise_cancelling").addClass('d-none');
+  $(".bass").removeClass('d-none');
+  e.preventDefault();
+});
+
+$(document).on("click","#show-mp", function(e){
+  $(".bass").addClass('d-none');
+  $(".max_price").removeClass('d-none');
+  e.preventDefault();
+});

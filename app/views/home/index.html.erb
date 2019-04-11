@@ -29,7 +29,5 @@
 </div>
 
 <div class='text-center'>
-    <%= link_to query_new_path do %>
-        <%= image_tag("Suggestor.png", width: '350', height: '125') %>
-    <% end %>
+    <%= button_to "Suggestor", {controller: 'query', action: 'new'}, :class => "btn btn-primary", :method => :get  %>
 </div>
