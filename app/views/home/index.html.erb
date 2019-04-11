@@ -1,7 +1,35 @@
-<h1>Amazon Product Suggestor</h1>
 
-<div class ='jumbotron'>
+<div class="text-center mt-4 ml-3 mr-3 font-family: 'Lato', sans-serif;">
+    <h1 style='color:#FF9900; font-size: 700%;'>"We Hear You"</h1>
+    <h2>The Amazon Product Suggestor listens to your needs and identifies the ideal pair of headphones to suit your unique use case</h2>
+</div>
 
-<button><%= link_to "New Query", query_new_path %></button>
 
+<div class='container mt-5'>
+    
+    <div class='row'>
+        <div class='col'>
+            <%= image_tag("Bass_beat.png", width: '75', height: '125')%>
+        </div>
+    </div>
+    
+    <div class='row'>
+        <div class='col'></div>
+        <div class='col'></div>
+        <div class='col'>
+            <%= image_tag("Price_beat.png", width: '75', height: '125') %>
+        </div>
+        <div class='col'></div>
+        <div class='col'></div>
+        <div class='col'></div>
+        <div class='col'>
+            <%= image_tag("Double_beat.png", width: '150', height:'150') %>
+        </div>
+    </div>
+</div>
+
+<div class='text-center'>
+    <%= link_to query_new_path do %>
+        <%= image_tag("Suggestor.png", width: '350', height: '125') %>
+    <% end %>
 </div>

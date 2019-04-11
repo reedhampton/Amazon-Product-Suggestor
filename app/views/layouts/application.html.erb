@@ -3,7 +3,8 @@
   <head>
     <title>AmazonProductSuggestor</title>
     <%= csrf_meta_tags %>
-
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -12,14 +13,21 @@
      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
+          <li>
+             <%= image_tag("single_beat.png", width: '25', height: '50') %>
+          </li>
+          
+          <li class="nav-item ml-4">
             <%= link_to 'Home', home_path , :class => "navbar-brand"%>
           </li>
+          
           <li class="nav-item">
-            <%= link_to 'New Query', query_new_path, :class => "nav-link" %>
+            <%= link_to 'Suggestor', query_new_path, :class => "nav-link" %>
           </li>
-          <li class="nav-item">
-            <%= link_to 'All Queries', query_path, :class => "nav-link" %>
+        </ul>
+        <ul class='inline-block navbar-nav'>
+          <li class="nav-item text-right">
+            <p class = 'nav-link'>CSCE-470</p>
           </li>
         </ul>
     </nav>
