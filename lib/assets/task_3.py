@@ -21,7 +21,6 @@ from operator import itemgetter
 # *******************************************
 
 
-
 def pruneProdID(queryTypeString, prodIDURLList, queryPriceInt):
     
     # PRODUCT TYPE (prodID#)
@@ -98,31 +97,17 @@ def avgProdStar(solrResponse):
     totalNumReview = 1 # This makes the totalNum one higher than it is to prevent division by 0 when normalizing
     for i in star_dict:
         totalNumReview = totalNumReview + star_dict[i][1]
-    # print(star_dict)
+    
     avgStar = []
     for prod in star_dict:
         averaged = (star_dict[prod][0] / star_dict[prod][1])
         temp = (averaged * 1.2) + ( star_dict[prod][1] * (star_dict[prod][1] / totalNumReview) )
         a = (temp/totalNumReview)
-        b = 5/a
-        c = (b/500)
-        # TODO : I AM HERE MESSING WITH THE SCORES ..
-        #print(5-c)
-        normalized = (5-c)
-        #print((( (averaged * 1.1) + (star_dict[prod][1] * (star_dict[prod][1] / totalNumReview) ) ) / 5 ) + 3)
-        #print("_-----")
-
-        #normalized = ( ( (averaged * 1.1) + (star_dict[prod][1] * (star_dict[prod][1] / totalNumReview) ) ) / 5 ) + 3 # the 5 and 3 make so that it is no greater than 5 at the end. All middle is weight/normalizing
+        b = 5/(a*500)
+        normalized = (5-b)
         avgStar.append( ( prod, normalized ) )
-    # print(avgStar)
 
     return avgStar
-
-
-
-
-
-
 
 def score(parsed1List, termPref1Int, parsed2List, termPref2Int, parsed3List, termPref3Int):
     # Apply scoring per unique prodID
@@ -132,12 +117,6 @@ def score(parsed1List, termPref1Int, parsed2List, termPref2Int, parsed3List, ter
     toReturn.append( [ (int(i[0]), (i[1]*termPref3Int) ) for i in parsed3List ] )
    
     return(toReturn)
-
-
-
-
-
-
 
 def tops(termsScoreListofList,queryTerm1Pref,queryTerm2Pref,queryTerm3Pref):
     # each list is a query containing tuples of the unqiue prod id and their score
@@ -171,58 +150,33 @@ def tops(termsScoreListofList,queryTerm1Pref,queryTerm2Pref,queryTerm3Pref):
 
     for lis in termsScoreListofList:
         for item in lis:
-            #print(item)
             if (item[0] == bestProduct[0]):
                 toReturn.append(item[1])
                 noitem = True
-        #print("---")
-        
         # ! Error .. if best product is not included in tops list then doesnt append value for that assoicated score
         if False == noitem:
             print("error??")
         noitem = True
 
-            
-    a = 10/(bestProduct[1])
-    b = (5- (a/3))
-    toReturn.append(round(b,2))
-
+    toReturn.append(0)
     toReturn.append(highestScoreProdInQueryList[0])
     toReturn.append(highestScoreProdInQueryList[1])
     toReturn.append(highestScoreProdInQueryList[2])
 
-    
-    if(queryTerm1Pref!=-9 and queryTerm2Pref!=-9 and queryTerm3Pref!=-9 ):
-        toReturn[1] = round(toReturn[1] / queryTerm1Pref,2)
-        toReturn[2] = round(toReturn[2] / queryTerm2Pref,2)
-        toReturn[3] = round(toReturn[3] / queryTerm3Pref,2)
-        toReturn[5] = ( toReturn[5][0], round(toReturn[5][1] / queryTerm1Pref,2) )
-        toReturn[6] = ( toReturn[6][0], round(toReturn[6][1] / queryTerm2Pref,2) )
-        toReturn[7] = ( toReturn[7][0], round(toReturn[7][1] / queryTerm3Pref,2) )
-    else:
-        if(queryTerm1Pref==-9):
-            toReturn[1] = 0
-            toReturn[5] = ( toReturn[5][0], 0 )
-        if(queryTerm2Pref==-9):
-            toReturn[2] = 0
-            toReturn[6] = ( toReturn[6][0], 0 )
-        if(queryTerm3Pref==-9):
-            toReturn[3] = 0
-            toReturn[7] = ( toReturn[7][0], 0 )
-
+    toReturn[1] = round(toReturn[1] / queryTerm1Pref,2)
+    toReturn[2] = round(toReturn[2] / queryTerm2Pref,2)
+    toReturn[3] = round(toReturn[3] / queryTerm3Pref,2)
+    toReturn[4] = round( ( (toReturn[1]+toReturn[2]+toReturn[3])/3 ), 2 )
+    toReturn[5] = ( toReturn[5][0], round(toReturn[5][1] / queryTerm1Pref,2) )
+    toReturn[6] = ( toReturn[6][0], round(toReturn[6][1] / queryTerm2Pref,2) )
+    toReturn[7] = ( toReturn[7][0], round(toReturn[7][1] / queryTerm3Pref,2) )
 
     return(toReturn)
     
-
-
-
 def toRubyString(champList,prodUrlPriceList):
     # (RETURN: TOPPRODUCTBUESCORE,TOPPRODUCTNOISESCORE,TOPPRODUCTBASSSCORE,TOPPRODUCTOVERALLSCORE,TOPPRODUCTPRICE,TOPPRODURL,TOPBLUEURL,TOPNOISEURL,TOPBASSURL)
-    #print(champList[0])
     rubyString = str(champList[1]) + "," + str(champList[2]) + "," + str(champList[3]) + "," + str(champList[4]) + "," + str(prodUrlPriceList[champList[0]-1][2]) + "," + str(prodUrlPriceList[champList[0]-1][1]) + "," + str(prodUrlPriceList[champList[5][0]-1][1]) + "," + str(prodUrlPriceList[champList[6][0]-1][1]) + "," + str(prodUrlPriceList[champList[7][0]-1][1])
     return rubyString
-
-
 
 
 def main():
@@ -286,7 +240,7 @@ def main():
     # RECIEVING DATA AS ARGUMENTS FROM FORM
     # -------------------------------------------
 
-    # (WILL COME IN BLUETOOTHPREF,NOISEPREF,BASSPREF,TYPE(string as above) ,PRICE(int) )
+    # (WILL COME IN BLUETOOTHPREF,NOISEPREF,BASSPREF,TYPE(string) ,PRICE(int) )
     # Form
     queryTerm1 = "bluetooth OR \"blue tooth\""
     queryTerm1Pref = int(sys.argv[1])
@@ -296,22 +250,6 @@ def main():
     queryTerm3Pref = int(sys.argv[3])
     queryType = str(sys.argv[4])
     queryPrice = int(sys.argv[5])
-
-
-    if(queryTerm1Pref == 0):
-        queryTerm1Pref = -9
-    if(queryTerm2Pref == 0):
-        queryTerm2Pref = -9
-    if(queryTerm3Pref == 0):
-        queryTerm3Pref = -9
-    
-    #queryTerm1Pref = queryTerm1Pref / 3
-    #queryTerm3Pref = queryTerm3Pref / 2
-
-    # queryTerm2Pref = queryTerm2Pref * (queryTerm2Pref / 5)
-    # queryTerm3Pref = queryTerm3Pref * (queryTerm3Pref / 5)
-
-
     
 
 
@@ -357,7 +295,6 @@ def main():
     # -------------------------------------------
 
     return(toRubyString(tops(termsScoreListofList,queryTerm1Pref,queryTerm2Pref,queryTerm3Pref),prodIDUrlPrice))
-
 
 
 if __name__ == "__main__":
