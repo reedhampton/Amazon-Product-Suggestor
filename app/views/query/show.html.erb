@@ -1,35 +1,74 @@
-<h1>Query <%= @query.id %></h1>
+<div class="text-center mt-5 font-family: 'Lato', sans-serif;">
+    <h1 class='mb-5' style='color:#FF9900; font-size: 700%;'>Your Suggestion</h1>
+</div>
 
-<table>
-    <tr>
-      <th>headphone_type</th>
-      <th>bluetooth_weighting</th>
-      <th>noise_cancelling_weighting</th>
-      <th>base_weighting</th>
-      <th>max_price</th>
-    </tr>
-    <tr>
-      <td><%= @query.headphone_type %></td>
-      <td><%= @query.bluetooth_weighting %></td>
-      <td><%= @query.noise_cancelling_weighting %></td>
-      <td><%= @query.base_weighting %></td>
-      <td><%= @query.max_price %></td>
-    </tr>
-</table>
+<div class="modal-body row">
+  <div class="col-md-6">
+    
+    <div class='card mx-auto mt-3' style="width:85%;">
+      <div class="card-header text-center text-muted">
+        Top Bluetooth Product
+      </div>
+      <div class='card-body text-center'>
+        <a href='<%= session[:top_bt_url] %>' target='_blank'><%= session[:top_bt_name] %></a>
+      </div>
+    </div>
+    
+    <div class='card mx-auto mt-3' style="width:85%;">
+      <div class="card-header text-center text-muted">
+        Top Noise Cancelling Product
+      </div>
+      <div class='card-body text-center'>
+        <a href='<%= session[:top_nc_url] %>' target='_blank'><%= session[:top_nc_name] %></a>
+      </div>
+    </div>
+    
+    <div class='card mx-auto mt-3' style="width:85%;">
+      <div class="card-header text-center text-muted">
+        Top Base Product
+      </div>
+      <div class='card-body text-center'>
+        <a href='<%= session[:top_b_url] %>' target='_blank'><%= session[:top_b_name] %></a>
+      </div>
+    </div>
+    
+  </div>
+  
+  
+  <div class="col-md-6">
+    <div class='card mx-auto mt-3 d-flex' style="width:85%;">
+      <div class="card-header d-flex">
+          <span class='text-muted'>Suggested Product:</span>
+          <p class='ml-auto font-weight-bold'>$<%= session[:product_price] %></p>
+      </div>
+      <div class='card-body text-center'>
+        <a href='<%= session[:product_url] %>' target='_blank'><%= session[:product_name] %></a>
+      </div>
+    </div>
+    
+    <div class='jumbotron mx-auto mt-5' style="width:85%; height:43%;">
+      <div class='text-center'>
+        <div class='d-inline-block'>
+          <p class='mb-1'>Bluetooth Score</p>
+          <span class='badge badge-primary mx-auto'><%= session[:bluetooth_score] %></span>
+        </div>
+        
+        <div class='d-inline-block ml-4'>
+          <p class='mb-1'>Noise Cancelling Score</p>
+          <span class='badge badge-primary mx-auto'><%= session[:noise_cancelling_score] %></span>
+        </div>
+        
+        <div class='d-inline-block ml-4'>
+          <p class='mb-1'>Base Score</p>
+          <span class='badge badge-primary mx-auto'><%= session[:base_score] %></span>
+        </div>
+      </div>
+  
+      <div class='text-center mt-4'>
+        <p class='mb-1'>Overall Score</p>
+        <span class='badge badge-success mx-auto'><%= session[:overall_score] %></span>
+      </div>
+    </div>
 
-<hr>
-
-<h2>Bluetoothh Score: <%= session[:bluetooth_score] %></h2> <br>
-<h2>Noise Cancelling Score: <%= session[:noise_cancelling_score] %></h2> <br>
-<h2>Base Score: <%= session[:base_score] %></h2> <br>
-<h2>Overall Score: <%= session[:overall_score] %></h2> <br>
-<h2>Product Price: <%= session[:product_price] %></h2> <br>
-<h2>Product URL: <%= session[:product_url] %></h2> <br>
-<h2>Top Bluetooth Product: <%= session[:top_bt_url] %></h2> <br>
-<h2>Top Noise Cancelling Product: <%= session[:top_nc_url] %></h2> <br>
-<h2>Top Base Product: <%= session[:top_b_url] %></h2> <br>
-
-
-
-<h4>This is a temporary I-Frame, the actual Product will go in here</h4>
-<%= content_tag(:iframe, '', src: "https://www.amazon.com/", width: 560, height: 315, frameborder: 0) %>
+  </div>
+</div>
