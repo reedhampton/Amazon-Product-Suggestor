@@ -9,7 +9,10 @@
     
     <div class='row'>
         <div class='col'>
-            <%= image_tag("Bass_beat.png", width: '75', height: '125')%>
+            <%= image_tag("man_on_headphone.png", width: '75', height: '125')%>
+        </div>
+        <div class='col'>
+            <%= image_tag("treble_clef.png", width: '75', height: '125')%>
         </div>
     </div>
     
@@ -17,17 +20,17 @@
         <div class='col'></div>
         <div class='col'></div>
         <div class='col'>
-            <%= image_tag("Price_beat.png", width: '75', height: '125') %>
+            <%= image_tag("single_beat.png", width: '75', height: '125') %>
         </div>
         <div class='col'></div>
         <div class='col'></div>
         <div class='col'></div>
         <div class='col'>
-            <%= image_tag("Double_beat.png", width: '150', height:'150') %>
+            <%= image_tag("double_beat.png", width: '150', height:'150') %>
         </div>
     </div>
 </div>
 
 <div class='text-center'>
-    <%= button_to "Suggestor", {controller: 'query', action: 'new'}, :class => "btn btn-primary", :method => :get  %>
+    <%= button_to "Begin Suggestion Process", {controller: 'query', action: 'new'}, :class => "btn btn-success", :method => :get  %>
 </div>

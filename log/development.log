@@ -6781,3 +6781,608 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 47ms (Views: 46.2ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/home/index" for 50.30.192.23 at 2019-04-15 17:31:47 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (161.4ms)
+Completed 200 OK in 273ms (Views: 271.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/index" for 50.30.192.23 at 2019-04-15 17:32:16 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset "guitar-with-musical-notes.png" is not present in the asset pipeline.):
+    12:             <%= image_tag("man_on_headphone.png", width: '75', height: '125')%>
+    13:         </div>
+    14:         <div class='col'>
+    15:             <%= image_tag("guitar-with-musical-notes.png", width: '75', height: '125')%>
+    16:         </div>
+    17:     </div>
+    18:     
+  
+app/views/home/index.html.erb:15:in `_app_views_home_index_html_erb___2705667682084312179_69912543472280'
+Started GET "/home/index" for 50.30.192.23 at 2019-04-15 17:32:24 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 47ms (Views: 46.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/index" for 50.30.192.23 at 2019-04-15 17:32:42 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 52ms (Views: 51.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/index" for 50.30.192.23 at 2019-04-15 17:33:36 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/CSCE 470/Amazon-Product-Suggestor/app/views/home/index.html.erb:35: syntax error, unexpected ',', expecting ')'
+...=( image_tag("many_notes.png"), :style => "z-index: 900;" );...
+...                              ^):
+  
+app/views/home/index.html.erb:35: syntax error, unexpected ',', expecting ')'
+Started GET "/home/index" for 50.30.192.23 at 2019-04-15 17:34:30 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/CSCE 470/Amazon-Product-Suggestor/app/views/home/index.html.erb:35: syntax error, unexpected ',', expecting ')'
+...=( image_tag("many_notes.png"), html: {z-index: "900"} );@ou...
+...                              ^
+/home/ec2-user/environment/CSCE 470/Amazon-Product-Suggestor/app/views/home/index.html.erb:35: syntax error, unexpected ':', expecting =>
+...ny_notes.png"), html: {z-index: "900"} );@output_buffer.safe...
+...                              ^
+/home/ec2-user/environment/CSCE 470/Amazon-Product-Suggestor/app/views/home/index.html.erb:35: syntax error, unexpected '}', expecting ')'
+...s.png"), html: {z-index: "900"} );@output_buffer.safe_append...
+...                              ^
+/home/ec2-user/environment/CSCE 470/Amazon-Product-Suggestor/app/views/home/index.html.erb:39: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/ec2-user/environment/CSCE 470/Amazon-Product-Suggestor/app/views/home/index.html.erb:41: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/home/index.html.erb:35: syntax error, unexpected ',', expecting ')'
+app/views/home/index.html.erb:35: syntax error, unexpected ':', expecting =>
+app/views/home/index.html.erb:35: syntax error, unexpected '}', expecting ')'
+app/views/home/index.html.erb:39: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/home/index.html.erb:41: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/home/index" for 50.30.192.23 at 2019-04-15 17:35:11 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/CSCE 470/Amazon-Product-Suggestor/app/views/home/index.html.erb:35: syntax error, unexpected ',', expecting ')'
+...=( image_tag("many_notes.png"), :"z-index" => "900" );@outpu...
+...                              ^
+/home/ec2-user/environment/CSCE 470/Amazon-Product-Suggestor/app/views/home/index.html.erb:35: syntax error, unexpected =>, expecting ')'
+...many_notes.png"), :"z-index" => "900" );@output_buffer.safe_...
+...                             ^~):
+  
+app/views/home/index.html.erb:35: syntax error, unexpected ',', expecting ')'
+app/views/home/index.html.erb:35: syntax error, unexpected =>, expecting ')'
+Started GET "/home/index" for 50.30.192.23 at 2019-04-15 17:35:24 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 49ms (Views: 47.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/index" for 50.30.192.23 at 2019-04-15 17:37:23 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/CSCE 470/Amazon-Product-Suggestor/app/views/home/index.html.erb:36: syntax error, unexpected ','
+...ller: 'query', action: 'new'},, :"z-index" => "100" :class =...
+...                              ^
+/home/ec2-user/environment/CSCE 470/Amazon-Product-Suggestor/app/views/home/index.html.erb:36: syntax error, unexpected =>, expecting ')'
+... action: 'new'},, :"z-index" => "100" :class => "btn btn-pri...
+...                             ^~
+/home/ec2-user/environment/CSCE 470/Amazon-Product-Suggestor/app/views/home/index.html.erb:36: syntax error, unexpected ':', expecting ')'
+... 'new'},, :"z-index" => "100" :class => "btn btn-primary pos...
+...                              ^
+/home/ec2-user/environment/CSCE 470/Amazon-Product-Suggestor/app/views/home/index.html.erb:36: syntax error, unexpected ',', expecting ')'
+...btn-primary position-relative", :method => :get  );@output_b...
+...                              ^):
+  
+app/views/home/index.html.erb:36: syntax error, unexpected ','
+app/views/home/index.html.erb:36: syntax error, unexpected =>, expecting ')'
+app/views/home/index.html.erb:36: syntax error, unexpected ':', expecting ')'
+app/views/home/index.html.erb:36: syntax error, unexpected ',', expecting ')'
+Started GET "/home/index" for 50.30.192.23 at 2019-04-15 17:37:31 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/CSCE 470/Amazon-Product-Suggestor/app/views/home/index.html.erb:36: syntax error, unexpected ':', expecting ')'
+...: 'new'}, :"z-index" => "100" :class => "btn btn-primary pos...
+...                              ^
+/home/ec2-user/environment/CSCE 470/Amazon-Product-Suggestor/app/views/home/index.html.erb:36: syntax error, unexpected ',', expecting ')'
+...btn-primary position-relative", :method => :get  );@output_b...
+...                              ^):
+  
+app/views/home/index.html.erb:36: syntax error, unexpected ':', expecting ')'
+app/views/home/index.html.erb:36: syntax error, unexpected ',', expecting ')'
+Started GET "/home/index" for 50.30.192.23 at 2019-04-15 17:37:41 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 49ms (Views: 47.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/index" for 50.30.192.23 at 2019-04-15 17:39:20 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 55ms (Views: 53.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/index" for 50.30.192.23 at 2019-04-15 17:39:40 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 46ms (Views: 44.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 50.30.192.23 at 2019-04-15 17:40:14 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.9ms)
+  Rendered query/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 47ms (Views: 46.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 50.30.192.23 at 2019-04-15 17:41:15 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/new.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/CSCE 470/Amazon-Product-Suggestor/app/views/query/new.html.erb:5: syntax error, unexpected ',', expecting ')'
+...", width: '75', height: '125'), :class => 'd-inline-block');...
+...                              ^):
+  
+app/views/query/new.html.erb:5: syntax error, unexpected ',', expecting ')'
+Started GET "/query/new" for 50.30.192.23 at 2019-04-15 17:41:23 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.7ms)
+  Rendered query/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 45ms (Views: 44.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 50.30.192.23 at 2019-04-15 17:41:35 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.7ms)
+  Rendered query/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 48ms (Views: 46.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 50.30.192.23 at 2019-04-15 17:41:54 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (3.1ms)
+  Rendered query/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 51ms (Views: 49.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 50.30.192.23 at 2019-04-15 17:41:55 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (3.9ms)
+  Rendered query/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 55ms (Views: 54.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 50.30.192.23 at 2019-04-15 17:42:12 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (3.0ms)
+  Rendered query/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 48ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 50.30.192.23 at 2019-04-15 17:42:41 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.8ms)
+  Rendered query/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 45ms (Views: 43.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 50.30.192.23 at 2019-04-15 17:42:57 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.8ms)
+  Rendered query/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 45ms (Views: 44.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 50.30.192.23 at 2019-04-15 17:43:05 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.7ms)
+  Rendered query/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 46ms (Views: 45.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 50.30.192.23 at 2019-04-15 17:43:16 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.9ms)
+  Rendered query/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 48ms (Views: 46.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 50.30.192.23 at 2019-04-15 17:43:37 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (3.0ms)
+  Rendered query/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 49ms (Views: 48.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 50.30.192.23 at 2019-04-15 17:43:45 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (3.2ms)
+  Rendered query/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 55ms (Views: 54.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 50.30.192.23 at 2019-04-15 17:43:55 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.9ms)
+  Rendered query/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 49ms (Views: 47.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 50.30.192.23 at 2019-04-15 17:44:21 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.9ms)
+  Rendered query/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 46ms (Views: 45.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 50.30.192.23 at 2019-04-15 17:44:29 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (3.0ms)
+  Rendered query/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 47ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 50.30.192.23 at 2019-04-15 17:44:36 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.7ms)
+  Rendered query/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 48ms (Views: 46.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 50.30.192.23 at 2019-04-15 17:45:02 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.8ms)
+  Rendered query/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 48ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 50.30.192.23 at 2019-04-15 17:45:13 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.9ms)
+  Rendered query/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 48ms (Views: 46.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 50.30.192.23 at 2019-04-15 17:45:24 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (3.0ms)
+  Rendered query/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 57ms (Views: 55.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 50.30.192.23 at 2019-04-15 17:45:33 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (3.0ms)
+  Rendered query/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 54ms (Views: 52.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 50.30.192.23 at 2019-04-15 17:46:01 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (3.0ms)
+  Rendered query/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 49ms (Views: 48.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 50.30.192.23 at 2019-04-15 17:46:12 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (3.2ms)
+  Rendered query/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 53ms (Views: 52.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 50.30.192.23 at 2019-04-15 17:46:20 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (3.0ms)
+  Rendered query/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 48ms (Views: 47.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 50.30.192.23 at 2019-04-15 17:46:28 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.9ms)
+  Rendered query/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 49ms (Views: 47.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/query" for 50.30.192.23 at 2019-04-15 17:46:39 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7SSdzh3+KT/eaZsNJfjcw+M9w3OwWHgFa2cKOS4FSFGmCsetyfsHNOFTwODWK2J0bRIq+AqU3X/XUxGwB47CPA==", "query"=>{"headphone_type"=>"Over-Ear", "bluetooth_weighting"=>"5", "noise_cancelling_weighting"=>"3", "base_weighting"=>"4", "max_price"=>"100"}, "commit"=>"Generate Suggestion"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "queries" ("headphone_type", "bluetooth_weighting", "noise_cancelling_weighting", "base_weighting", "max_price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["headphone_type", "Over-Ear"], ["bluetooth_weighting", 5], ["noise_cancelling_weighting", 3], ["base_weighting", 4], ["max_price", 100], ["created_at", "2019-04-15 17:46:39.999696"], ["updated_at", "2019-04-15 17:46:39.999696"]]
+  [1m[35m (7.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://7a4614139f7d46a3980eef3f3183937e.vfs.cloud9.us-east-1.amazonaws.com/query/49
+Completed 302 Found in 35ms (ActiveRecord: 8.6ms)
+
+
+Started GET "/query/49" for 50.30.192.23 at 2019-04-15 17:46:40 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"49"}
+  [1m[36mQuery Load (0.1ms)[0m  [1m[34mSELECT  "queries".* FROM "queries" WHERE "queries"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  Rendering query/show.html.erb within layouts/application
+  Rendered query/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 43ms (Views: 40.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/query/49" for 50.30.192.23 at 2019-04-15 17:47:27 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"49"}
+  [1m[36mQuery Load (0.1ms)[0m  [1m[34mSELECT  "queries".* FROM "queries" WHERE "queries"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  Rendering query/show.html.erb within layouts/application
+  Rendered query/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 46ms (Views: 44.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/query/49" for 50.30.192.23 at 2019-04-15 17:47:48 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"49"}
+  [1m[36mQuery Load (0.1ms)[0m  [1m[34mSELECT  "queries".* FROM "queries" WHERE "queries"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  Rendering query/show.html.erb within layouts/application
+  Rendered query/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 51ms (Views: 49.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/query/49" for 50.30.192.23 at 2019-04-15 17:48:02 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"49"}
+  [1m[36mQuery Load (0.1ms)[0m  [1m[34mSELECT  "queries".* FROM "queries" WHERE "queries"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  Rendering query/show.html.erb within layouts/application
+  Rendered query/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 47ms (Views: 45.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/query/49" for 50.30.192.23 at 2019-04-15 17:48:26 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"49"}
+  [1m[36mQuery Load (0.1ms)[0m  [1m[34mSELECT  "queries".* FROM "queries" WHERE "queries"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  Rendering query/show.html.erb within layouts/application
+  Rendered query/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 46ms (Views: 44.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/query/49" for 50.30.192.23 at 2019-04-15 17:48:40 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"49"}
+  [1m[36mQuery Load (0.7ms)[0m  [1m[34mSELECT  "queries".* FROM "queries" WHERE "queries"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  Rendering query/show.html.erb within layouts/application
+  Rendered query/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 45ms (Views: 42.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/query/49" for 50.30.192.23 at 2019-04-15 17:48:55 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"49"}
+  [1m[36mQuery Load (0.2ms)[0m  [1m[34mSELECT  "queries".* FROM "queries" WHERE "queries"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  Rendering query/show.html.erb within layouts/application
+  Rendered query/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 45ms (Views: 43.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/query/new" for 50.30.192.23 at 2019-04-15 17:48:58 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.9ms)
+  Rendered query/new.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 48ms (Views: 46.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/index" for 50.30.192.23 at 2019-04-15 17:48:59 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 44ms (Views: 43.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 50.30.192.23 at 2019-04-15 17:49:01 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (2.9ms)
+  Rendered query/new.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 57ms (Views: 56.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/query" for 50.30.192.23 at 2019-04-15 17:49:15 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dT3MJuftrD5ArxLfUOZVMjamHdzU9GqcT6HxQSlKL1xHWE+cilNg/cwLu1G/KJhvpw8Um7CYKYmGilJgLhh9WA==", "query"=>{"headphone_type"=>"Over-Ear", "bluetooth_weighting"=>"5", "noise_cancelling_weighting"=>"3", "base_weighting"=>"2", "max_price"=>"5"}, "commit"=>"Generate Suggestion"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "queries" ("headphone_type", "bluetooth_weighting", "noise_cancelling_weighting", "base_weighting", "max_price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["headphone_type", "Over-Ear"], ["bluetooth_weighting", 5], ["noise_cancelling_weighting", 3], ["base_weighting", 2], ["max_price", 5], ["created_at", "2019-04-15 17:49:15.964789"], ["updated_at", "2019-04-15 17:49:15.964789"]]
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://7a4614139f7d46a3980eef3f3183937e.vfs.cloud9.us-east-1.amazonaws.com/query/50
+Completed 302 Found in 33ms (ActiveRecord: 7.3ms)
+
+
+Started GET "/query/50" for 50.30.192.23 at 2019-04-15 17:49:16 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mQuery Load (0.1ms)[0m  [1m[34mSELECT  "queries".* FROM "queries" WHERE "queries"."id" = ? LIMIT ?[0m  [["id", 50], ["LIMIT", 1]]
+  Rendering query/show.html.erb within layouts/application
+  Rendered query/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 46ms (Views: 44.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/query/50" for 50.30.192.23 at 2019-04-15 17:49:45 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mQuery Load (0.1ms)[0m  [1m[34mSELECT  "queries".* FROM "queries" WHERE "queries"."id" = ? LIMIT ?[0m  [["id", 50], ["LIMIT", 1]]
+  Rendering query/show.html.erb within layouts/application
+  Rendered query/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 44ms (Views: 42.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/home/index" for 50.30.192.23 at 2019-04-15 17:49:49 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 46ms (Views: 44.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 50.30.192.23 at 2019-04-15 17:49:52 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (3.1ms)
+  Rendered query/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 52ms (Views: 50.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/index" for 50.30.192.23 at 2019-04-15 17:50:14 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 47ms (Views: 45.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/index" for 50.30.192.23 at 2019-04-15 17:51:00 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 48ms (Views: 46.9ms)
+
+
+Started GET "/query/new" for 50.30.192.23 at 2019-04-15 17:51:02 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (3.4ms)
+  Rendered query/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 69ms (Views: 57.2ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/query" for 50.30.192.23 at 2019-04-15 17:51:08 +0000
+Cannot render console from 50.30.192.23! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hMsyr73qNe/3iHELVocT+dfZWmrbU1Qn5gIyLds2mQNRmu29cPXn3Lg7U18LuUge4HWFeCsHWeXfyb3gPa8yTg==", "query"=>{"headphone_type"=>"Over-Ear", "bluetooth_weighting"=>"4", "noise_cancelling_weighting"=>"3", "base_weighting"=>"4", "max_price"=>"100"}, "commit"=>"Generate Suggestion"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "queries" ("headphone_type", "bluetooth_weighting", "noise_cancelling_weighting", "base_weighting", "max_price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["headphone_type", "Over-Ear"], ["bluetooth_weighting", 4], ["noise_cancelling_weighting", 3], ["base_weighting", 4], ["max_price", 100], ["created_at", "2019-04-15 17:51:08.986665"], ["updated_at", "2019-04-15 17:51:08.986665"]]
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 6.5ms)
+
+
+  
+NoMethodError (undefined method `gsub' for nil:NilClass):
+  
+app/controllers/query_controller.rb:29:in `create'
