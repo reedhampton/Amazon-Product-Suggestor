@@ -7386,3 +7386,383 @@ Completed 500 Internal Server Error in 33ms (ActiveRecord: 6.5ms)
 NoMethodError (undefined method `gsub' for nil:NilClass):
   
 app/controllers/query_controller.rb:29:in `create'
+Started GET "/" for 165.91.13.6 at 2019-04-16 15:12:16 +0000
+Cannot render console from 165.91.13.6! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 75ms (Views: 73.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 165.91.13.6 at 2019-04-16 15:12:18 +0000
+Cannot render console from 165.91.13.6! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 54ms (Views: 53.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/query/new" for 165.91.13.6 at 2019-04-16 15:12:20 +0000
+Cannot render console from 165.91.13.6! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (3.2ms)
+  Rendered query/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 52ms (Views: 51.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/query" for 165.91.13.6 at 2019-04-16 15:12:30 +0000
+Cannot render console from 165.91.13.6! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Rc0Bx8Q3+llbYKcp21TqjYitoxeU1WtWdDQUyjDlDcQ8A3qGguBEmsunj4D1s9MQk+OjDDYv+yn0qLNKALCXEw==", "query"=>{"headphone_type"=>"On-Ear", "bluetooth_weighting"=>"4", "noise_cancelling_weighting"=>"3", "base_weighting"=>"4", "max_price"=>"100"}, "commit"=>"Generate Suggestion"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (5.4ms)[0m  [1m[32mINSERT INTO "queries" ("headphone_type", "bluetooth_weighting", "noise_cancelling_weighting", "base_weighting", "max_price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["headphone_type", "On-Ear"], ["bluetooth_weighting", 4], ["noise_cancelling_weighting", 3], ["base_weighting", 4], ["max_price", 100], ["created_at", "2019-04-16 15:12:30.590704"], ["updated_at", "2019-04-16 15:12:30.590704"]]
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 98ms (ActiveRecord: 11.0ms)
+
+
+  
+NoMethodError (undefined method `gsub' for nil:NilClass):
+  
+app/controllers/query_controller.rb:29:in `create'
+Started POST "/query" for 165.91.13.6 at 2019-04-16 15:12:52 +0000
+Cannot render console from 165.91.13.6! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Rc0Bx8Q3+llbYKcp21TqjYitoxeU1WtWdDQUyjDlDcQ8A3qGguBEmsunj4D1s9MQk+OjDDYv+yn0qLNKALCXEw==", "query"=>{"headphone_type"=>"On-Ear", "bluetooth_weighting"=>"4", "noise_cancelling_weighting"=>"3", "base_weighting"=>"4", "max_price"=>"100"}, "commit"=>"Generate Suggestion"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "queries" ("headphone_type", "bluetooth_weighting", "noise_cancelling_weighting", "base_weighting", "max_price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["headphone_type", "On-Ear"], ["bluetooth_weighting", 4], ["noise_cancelling_weighting", 3], ["base_weighting", 4], ["max_price", 100], ["created_at", "2019-04-16 15:12:52.297813"], ["updated_at", "2019-04-16 15:12:52.297813"]]
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://7a4614139f7d46a3980eef3f3183937e.vfs.cloud9.us-east-1.amazonaws.com/query/53
+Completed 302 Found in 43ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/query/53" for 165.91.13.6 at 2019-04-16 15:12:52 +0000
+Cannot render console from 165.91.13.6! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mQuery Load (0.2ms)[0m  [1m[34mSELECT  "queries".* FROM "queries" WHERE "queries"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  Rendering query/show.html.erb within layouts/application
+  Rendered query/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 44ms (Views: 41.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/query/53" for 165.91.13.6 at 2019-04-16 15:13:41 +0000
+Cannot render console from 165.91.13.6! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mQuery Load (0.1ms)[0m  [1m[34mSELECT  "queries".* FROM "queries" WHERE "queries"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  Rendering query/show.html.erb within layouts/application
+  Rendered query/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 45ms (Views: 43.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/query/53" for 165.91.13.6 at 2019-04-16 15:16:26 +0000
+Cannot render console from 165.91.13.6! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mQuery Load (0.1ms)[0m  [1m[34mSELECT  "queries".* FROM "queries" WHERE "queries"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  Rendering query/show.html.erb within layouts/application
+  Rendered query/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 2265ms (Views: 2263.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/query/53" for 165.91.13.6 at 2019-04-16 15:16:34 +0000
+Cannot render console from 165.91.13.6! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mQuery Load (0.1ms)[0m  [1m[34mSELECT  "queries".* FROM "queries" WHERE "queries"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  Rendering query/show.html.erb within layouts/application
+  Rendered query/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 2248ms (Views: 2245.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/query/53" for 165.91.13.6 at 2019-04-16 15:17:30 +0000
+Cannot render console from 165.91.13.6! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mQuery Load (0.1ms)[0m  [1m[34mSELECT  "queries".* FROM "queries" WHERE "queries"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  Rendering query/show.html.erb within layouts/application
+  Rendered query/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 60ms (Views: 58.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/query/53" for 165.91.13.6 at 2019-04-16 15:17:42 +0000
+Cannot render console from 165.91.13.6! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mQuery Load (0.2ms)[0m  [1m[34mSELECT  "queries".* FROM "queries" WHERE "queries"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  Rendering query/show.html.erb within layouts/application
+  Rendered query/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 51ms (Views: 48.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/query/53" for 165.91.13.6 at 2019-04-16 15:18:08 +0000
+Cannot render console from 165.91.13.6! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mQuery Load (0.1ms)[0m  [1m[34mSELECT  "queries".* FROM "queries" WHERE "queries"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  Rendering query/show.html.erb within layouts/application
+  Rendered query/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 91ms (Views: 89.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/query/53" for 165.91.13.6 at 2019-04-16 15:18:21 +0000
+Cannot render console from 165.91.13.6! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mQuery Load (0.1ms)[0m  [1m[34mSELECT  "queries".* FROM "queries" WHERE "queries"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  Rendering query/show.html.erb within layouts/application
+  Rendered query/show.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 75ms (Views: 73.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/query/53" for 165.91.13.6 at 2019-04-16 15:19:04 +0000
+Cannot render console from 165.91.13.6! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mQuery Load (0.1ms)[0m  [1m[34mSELECT  "queries".* FROM "queries" WHERE "queries"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  Rendering query/show.html.erb within layouts/application
+  Rendered query/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 50ms (Views: 48.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/query/53" for 165.91.13.6 at 2019-04-16 15:19:14 +0000
+Cannot render console from 165.91.13.6! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mQuery Load (0.1ms)[0m  [1m[34mSELECT  "queries".* FROM "queries" WHERE "queries"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  Rendering query/show.html.erb within layouts/application
+  Rendered query/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 48ms (Views: 45.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/query/53" for 165.91.13.6 at 2019-04-16 15:19:28 +0000
+Cannot render console from 165.91.13.6! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mQuery Load (0.1ms)[0m  [1m[34mSELECT  "queries".* FROM "queries" WHERE "queries"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  Rendering query/show.html.erb within layouts/application
+  Rendered query/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 2187ms (Views: 2185.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/query/53" for 165.91.13.6 at 2019-04-16 15:20:02 +0000
+Cannot render console from 165.91.13.6! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mQuery Load (0.1ms)[0m  [1m[34mSELECT  "queries".* FROM "queries" WHERE "queries"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  Rendering query/show.html.erb within layouts/application
+  Rendered query/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 2292ms (Views: 2289.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/query/53" for 165.91.13.6 at 2019-04-16 15:20:11 +0000
+Cannot render console from 165.91.13.6! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mQuery Load (0.1ms)[0m  [1m[34mSELECT  "queries".* FROM "queries" WHERE "queries"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  Rendering query/show.html.erb within layouts/application
+  Rendered query/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 2300ms (Views: 2298.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/query/53" for 165.91.13.6 at 2019-04-16 15:20:22 +0000
+Cannot render console from 165.91.13.6! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mQuery Load (0.1ms)[0m  [1m[34mSELECT  "queries".* FROM "queries" WHERE "queries"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  Rendering query/show.html.erb within layouts/application
+  Rendered query/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 2194ms (Views: 2192.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/query/53" for 165.91.13.6 at 2019-04-16 15:21:16 +0000
+Cannot render console from 165.91.13.6! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mQuery Load (0.1ms)[0m  [1m[34mSELECT  "queries".* FROM "queries" WHERE "queries"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  Rendering query/show.html.erb within layouts/application
+  Rendered query/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 45ms (Views: 42.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/query/53" for 165.91.13.6 at 2019-04-16 15:21:29 +0000
+Cannot render console from 165.91.13.6! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mQuery Load (0.1ms)[0m  [1m[34mSELECT  "queries".* FROM "queries" WHERE "queries"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  Rendering query/show.html.erb within layouts/application
+  Rendered query/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 63ms (Views: 62.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/query/53" for 165.91.13.6 at 2019-04-16 15:21:35 +0000
+Cannot render console from 165.91.13.6! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mQuery Load (0.2ms)[0m  [1m[34mSELECT  "queries".* FROM "queries" WHERE "queries"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  Rendering query/show.html.erb within layouts/application
+  Rendered query/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 64ms (Views: 62.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/query/53" for 165.91.13.6 at 2019-04-16 15:21:49 +0000
+Cannot render console from 165.91.13.6! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mQuery Load (0.1ms)[0m  [1m[34mSELECT  "queries".* FROM "queries" WHERE "queries"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  Rendering query/show.html.erb within layouts/application
+  Rendered query/show.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 101ms (Views: 98.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/query/53" for 165.91.13.6 at 2019-04-16 15:21:57 +0000
+Cannot render console from 165.91.13.6! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mQuery Load (0.1ms)[0m  [1m[34mSELECT  "queries".* FROM "queries" WHERE "queries"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  Rendering query/show.html.erb within layouts/application
+  Rendered query/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 51ms (Views: 48.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/query/53" for 165.91.13.6 at 2019-04-16 15:22:06 +0000
+Cannot render console from 165.91.13.6! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mQuery Load (0.1ms)[0m  [1m[34mSELECT  "queries".* FROM "queries" WHERE "queries"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  Rendering query/show.html.erb within layouts/application
+  Rendered query/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 44ms (Views: 42.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/query/53" for 165.91.13.6 at 2019-04-16 15:22:14 +0000
+Cannot render console from 165.91.13.6! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mQuery Load (0.1ms)[0m  [1m[34mSELECT  "queries".* FROM "queries" WHERE "queries"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  Rendering query/show.html.erb within layouts/application
+  Rendered query/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 48ms (Views: 46.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/query/53" for 165.91.13.6 at 2019-04-16 15:22:26 +0000
+Cannot render console from 165.91.13.6! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mQuery Load (0.1ms)[0m  [1m[34mSELECT  "queries".* FROM "queries" WHERE "queries"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  Rendering query/show.html.erb within layouts/application
+  Rendered query/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 45ms (Views: 43.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/query/53" for 165.91.13.6 at 2019-04-16 15:22:34 +0000
+Cannot render console from 165.91.13.6! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mQuery Load (0.1ms)[0m  [1m[34mSELECT  "queries".* FROM "queries" WHERE "queries"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  Rendering query/show.html.erb within layouts/application
+  Rendered query/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 47ms (Views: 44.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/query/53" for 165.91.13.6 at 2019-04-16 15:22:43 +0000
+Cannot render console from 165.91.13.6! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mQuery Load (0.1ms)[0m  [1m[34mSELECT  "queries".* FROM "queries" WHERE "queries"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  Rendering query/show.html.erb within layouts/application
+  Rendered query/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 48ms (Views: 45.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/query/53" for 165.91.13.6 at 2019-04-16 15:22:50 +0000
+Cannot render console from 165.91.13.6! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mQuery Load (0.1ms)[0m  [1m[34mSELECT  "queries".* FROM "queries" WHERE "queries"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  Rendering query/show.html.erb within layouts/application
+  Rendered query/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 47ms (Views: 45.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/query/53" for 165.91.13.6 at 2019-04-16 15:23:06 +0000
+Cannot render console from 165.91.13.6! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mQuery Load (0.8ms)[0m  [1m[34mSELECT  "queries".* FROM "queries" WHERE "queries"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  Rendering query/show.html.erb within layouts/application
+  Rendered query/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 50ms (Views: 46.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/query/53" for 165.91.13.6 at 2019-04-16 15:23:18 +0000
+Cannot render console from 165.91.13.6! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mQuery Load (0.1ms)[0m  [1m[34mSELECT  "queries".* FROM "queries" WHERE "queries"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  Rendering query/show.html.erb within layouts/application
+  Rendered query/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 52ms (Views: 50.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/query/new" for 165.91.13.6 at 2019-04-16 15:23:40 +0000
+Cannot render console from 165.91.13.6! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#new as HTML
+  Rendering query/new.html.erb within layouts/application
+  Rendered query/_form.html.erb (3.4ms)
+  Rendered query/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 51ms (Views: 50.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/query" for 165.91.13.6 at 2019-04-16 15:23:55 +0000
+Cannot render console from 165.91.13.6! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"c7OwTH8iwpfQ/66a8hWJ+lGhj8a84SjYHmhWSpZRComsUr/3Tsx+yJkyCUtUAkgcrtMuIbgkd6LCoL96O8PUJA==", "query"=>{"headphone_type"=>"On-Ear", "bluetooth_weighting"=>"3", "noise_cancelling_weighting"=>"5", "base_weighting"=>"2", "max_price"=>"200"}, "commit"=>"Generate Suggestion"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "queries" ("headphone_type", "bluetooth_weighting", "noise_cancelling_weighting", "base_weighting", "max_price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["headphone_type", "On-Ear"], ["bluetooth_weighting", 3], ["noise_cancelling_weighting", 5], ["base_weighting", 2], ["max_price", 200], ["created_at", "2019-04-16 15:23:55.357553"], ["updated_at", "2019-04-16 15:23:55.357553"]]
+  [1m[35m (6.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://7a4614139f7d46a3980eef3f3183937e.vfs.cloud9.us-east-1.amazonaws.com/query/54
+Completed 302 Found in 35ms (ActiveRecord: 8.0ms)
+
+
+Started GET "/query/54" for 165.91.13.6 at 2019-04-16 15:23:55 +0000
+Cannot render console from 165.91.13.6! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"54"}
+  [1m[36mQuery Load (0.1ms)[0m  [1m[34mSELECT  "queries".* FROM "queries" WHERE "queries"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+  Rendering query/show.html.erb within layouts/application
+  Rendered query/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 50ms (Views: 47.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/query/54" for 165.91.13.6 at 2019-04-16 15:24:39 +0000
+Cannot render console from 165.91.13.6! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"54"}
+  [1m[36mQuery Load (0.1ms)[0m  [1m[34mSELECT  "queries".* FROM "queries" WHERE "queries"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+  Rendering query/show.html.erb within layouts/application
+  Rendered query/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 46ms (Views: 43.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/query/54" for 165.91.13.6 at 2019-04-16 15:25:02 +0000
+Cannot render console from 165.91.13.6! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"54"}
+  [1m[36mQuery Load (0.1ms)[0m  [1m[34mSELECT  "queries".* FROM "queries" WHERE "queries"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+  Rendering query/show.html.erb within layouts/application
+  Rendered query/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 45ms (Views: 43.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/query/54" for 165.91.13.6 at 2019-04-16 15:25:12 +0000
+Cannot render console from 165.91.13.6! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"54"}
+  [1m[36mQuery Load (0.1ms)[0m  [1m[34mSELECT  "queries".* FROM "queries" WHERE "queries"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+  Rendering query/show.html.erb within layouts/application
+  Rendered query/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 46ms (Views: 44.2ms | ActiveRecord: 0.1ms)
+
+

@@ -1,10 +1,49 @@
 <div class="mt-5 d-flex font-family: 'Lato', sans-serif;">
     <%= image_tag("treble_clef.png", width: '75', height: '125', :class => 'mr-auto ml-5')%>
-    <h1 class='mb-5 mx-auto' style='color:#FF9900; font-size: 700%;'>Your Suggestion</h1>
+    <h1 class='mb-5 mx-auto' style='color:#FF9900; font-size: 700%;'>Our Suggestion</h1>
     <%= image_tag("treble_clef.png", width: '75', height: '125', :class => 'ml-auto mr-5')%>
 </div>
 
 <div class="modal-body row">
+  <div class="col-md-6">
+    <div class='card mx-auto mt-3 d-flex' style="width:85%;">
+      <div class="card-header d-flex">
+          <span class='font-weight-bold'>Suggested Product</span>
+          <p class='ml-auto font-weight-bold'>$<%= session[:product_price] %></p>
+      </div>
+      <div class='card-body text-center'>
+        <a class='font-weight-bold' href='<%= session[:product_url] %>' target='_blank'><%= session[:product_name] %></a>
+      </div>
+    </div>
+    
+    <div class='jumbotron mx-auto mt-5' style="width:85%; height:43%;">
+      <span class='font-weight-bold text-left'>Decision Making Criteria</span>
+      <hr>
+      
+      <div class='text-center ml-3 mb-3'>
+        <p class='mb-1 font-weight-bold'>Overall Score</p>
+        <span class='badge badge-success mx-auto'><%= session[:overall_score] %></span>
+      </div>
+      
+      <div class='text-center'>
+        <div class='d-inline-block mr-4'>
+          <p class='mb-1 font-weight-bold'>Bluetooth Score</p>
+          <span class='badge badge-primary mx-auto'><%= session[:bluetooth_score] %></span>
+        </div>
+        
+        <div class='d-inline-block mr-4'>
+          <p class='mb-1 font-weight-bold'>Noise Cancelling Score</p>
+          <span class='badge badge-primary mx-auto'><%= session[:noise_cancelling_score] %></span>
+        </div>
+        
+        <div class='d-inline-block mr-4'>
+          <p class='mb-1 font-weight-bold'>Bass Score</p>
+          <span class='badge badge-primary mx-auto'><%= session[:base_score] %></span>
+        </div>
+      </div>
+    </div>
+  </div>
+    
   <div class="col-md-6">
     
     <div class='card mx-auto mt-3' style="width:85%;">
@@ -33,44 +72,5 @@
         <a href='<%= session[:top_b_url] %>' target='_blank'><%= session[:top_b_name] %></a>
       </div>
     </div>
-    
-  </div>
-  
-  
-  <div class="col-md-6">
-    <div class='card mx-auto mt-3 d-flex' style="width:85%;">
-      <div class="card-header d-flex">
-          <span class='text-muted'>Suggested Product:</span>
-          <p class='ml-auto font-weight-bold'>$<%= session[:product_price] %></p>
-      </div>
-      <div class='card-body text-center'>
-        <a href='<%= session[:product_url] %>' target='_blank'><%= session[:product_name] %></a>
-      </div>
-    </div>
-    
-    <div class='jumbotron mx-auto mt-5' style="width:85%; height:43%;">
-      <div class='text-center'>
-        <div class='d-inline-block'>
-          <p class='mb-1 font-weight-bold'>Bluetooth Score</p>
-          <span class='badge badge-primary mx-auto'><%= session[:bluetooth_score] %></span>
-        </div>
-        
-        <div class='d-inline-block ml-4'>
-          <p class='mb-1 font-weight-bold'>Noise Cancelling Score</p>
-          <span class='badge badge-primary mx-auto'><%= session[:noise_cancelling_score] %></span>
-        </div>
-        
-        <div class='d-inline-block ml-4'>
-          <p class='mb-1 font-weight-bold'>Base Score</p>
-          <span class='badge badge-primary mx-auto'><%= session[:base_score] %></span>
-        </div>
-      </div>
-  
-      <div class='text-center mt-4'>
-        <p class='mb-1 font-weight-bold'>Overall Score</p>
-        <span class='badge badge-success mx-auto'><%= session[:overall_score] %></span>
-      </div>
-    </div>
-
   </div>
 </div>
